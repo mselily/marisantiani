@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Santiani</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fdfaff;
+        margin: 0 auto;
+        padding: 24px;
+        max-width: 900px;
+      }
+      
+      h1 {
+        color:#422054;
+        text-align: center;
+      }
+
+      h2 {
+        color: #563966
+      }
+
+      h3 {
+        color: #634175
+      }
+
+      h4 {
+        color: #8f6ea0;
+        font-size: smaller;
+      }
+      p {
+        color: #191818;
+        line-height: 1.6;
+        text-align: justify;
+      }
+
+      .aviso {
+        background: rgba(250, 243, 255, 0.971);
+        border-left: 6px solid #7e2b9f;
+        padding: 16px;
+      }
+      .tarjeta {
+        width: 320px;
+        margin: 40px 0;
+        padding: 20px;
+        border: 2px solid #7e2b9f;
+        background: rgba(250, 243, 255, 0.971);
+      }
+      .fila {
+        display: flex;
+        gap: 16px;
+      }
+      .bloque {
+        flex: 1;
+        padding: 20px;
+        background: rgba(250, 243, 255, 0.971);
+        border: 1px solid #7e2b9f;
+      }
+
+      .presentacion {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+      }
+
+      .presentacion.texto {
+        flex: 1;
+      }
+
+      .foto-perfil {
+        width: 220px;
+        height: 260px;
+        object-fit: cover;
+        border: 4px solid #7e2b9f;
+        border-radius: 10px;
+
+      }
+
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .galeria img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border: 3px solid #7e2b9f;
+        border-radius: 8px;
+      }
+
+      .coleccion {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .coleccion img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border: 3px solid #7e2b9f;
+        border-radius: 8px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenidos a mi página web</h1>
+
+     <script>
+      console.log("Buenas tardes, profesor.");
+    </script>
+
+    <div class="aviso">
+    <p>Mi nombre es Maria Isabel Leonor Santiani Evangelista</p>
+    </div>
+
+    <p>Ingresa tu nombre para una experiencia personalizada.</p>
+
+    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+    <button id="mostrar">¡Iniciar experiencia!</button>
+    <p id="salida"></p>
+
+    <script>
+      const botun = document.getElementById("mostrar");
+      const salida = document.getElementById("salida");
+
+      botun.addEventListener("click", function () {
+        const nombre = document.getElementById("nombre").value;
+        salida.textContent = "Hola, " + nombre + ". Es un gusto tenerte por aquí. Gracias por interesarte en mi perfil profesional. Conoce más sobre mi en esta página.";
+      });
+    </script>
+
+  <div class="presentacion">
+    <div class="presentacion-texto">
+      <h2>¿Quién soy?</h2>
+    <p>Soy una estudiante de la carrera de Derecho de sexto ciclo en la Universidad Científica del Sur, con interés
+en el ejercicio profesional y el aprendizaje continuo. Con experiencia en organización
+de eventos académicos, trabajo en equipo y atención a personas. Responsable,
+organizada y comprometida con el servicio a los demás.
+</p>
+
+<p id="salida2"></p>
+</div>
+  <img src="foto.jpeg" alt="Foto de Maria Santiani" class="foto-perfil">
+  </div>
+  
+
+    <script>
+      const tiempo = "Actualmente"
+      const nombre = " yo";
+      const curso = "Legal Tech";
+      const mensaje = tiempo + nombre + " estoy aprendiendo " + curso +  " para mejorar mis habilidades.";
+      document.getElementById("salida2").textContent = mensaje;
+    </script>
+
+       <h2>Mis competencias</h2>
+      <div class="fila">
+        <div class="bloque">Liderazgo</div>
+      <div class="bloque">Empatía</div>
+      <div class="bloque">Trabajo en equipo</div>
+      <div class="bloque">Multitarea</div>
+      <div class="bloque">Escucha activa</div>
+      <div class="bloque">Trabajo bajo presión</div>
+      <div class="bloque">Resolución de conflictos</div>
+      </div>
+
+      <h2>Experiencia Laboral</h2>
+      <h3>Summit Hotel at Big Sky - Runner</h3>
+      <h4>Montana, EEUU. Dic 2025 - Mar 2026</h4>
+      <p>Atención y asistencia a huéspedes, asegurando una experiencia de calidad y
+ejecutando el turndown service conforme a los estándares del hotel. Gestión de inventario operativo y trabajo en equipo para el manejo eficiente de
+tareas en entornos de alta demanda.
+</p>
+      <h3>H&M - Sales Advisor</h3>
+      <h4>Lima, Perú. Jun 2025 - Ago 2025</h4>
+      <p>Asesoramiento y atención personalizada a clientes, identificando sus necesidades
+durante la experiencia de compra. Manejo de caja y procesamiento de pagos, además del mantenimiento del orden en
+tienda</p>
+      <h2>Voluntariados</h2>
+      <h3>Universidad Científica del Sur - voluntaria en eventos</h3>
+      <h4>Lima, Perú. Jul 2025 - Oct 2026</h4>
+      <p>Apoyo en la coordinación de eventos académicos de la Facultad de Derecho y
+acompañamiento a ponentes nacionales e internacionales. Orientación y coordinación de voluntarios para garantizar el adecuado desarrollo de
+los eventos.
+</p>
+      <h3>Promotora Social San Francisco Javier - voluntaria </h3>
+      <h4>Lima, Perú. Dic 2022 - Ene 2024 </h4>
+      <p>Apoyo logístico en la planificación y organización de actividades y eventos de la
+promotora. Exposición de contenidos formativos a niños y facilitación de actividades educativas
+orientadas al desarrollo de valores, promoviendo su comprensión y aplicación en la
+vida cotidiana.
+</p>
+  
+  <h2>¡Fotoos!</h2>
+  <div class="galeria">
+    <img src="foto1.png" alt="alacde">
+    <img src="foto3.png" alt="montana">
+    <img src="foto2.png" alt="congresoambiental">
+  </div>
+
+    <h2>Idiomas</h2>
+    <table border="1">
+      <tr>
+        <th> </th>
+        <th>Español</th>
+        <th>Inglés</th>
+      </tr>
+      <tr>
+        <td>Nivel</td>
+        <td>Nativo</td>
+        <td>B2</td>
+      </tr>
+    </table>
+
+    <h2>¿Quieres saber más sobre mi?</h2>
+    <h3>Información personal</h3>
+    <p>¡Hola! Mis amigos me dicen Mari y actualmente tengo 19 años. Nací en diciembre, el día 24, así que mi cumpleaños siempre cae justo en plena Nochebuena, lo que lo hace un día muy especial para mí y para mi familia. Lo que más disfruto es pasar tiempo con las personas que quiero: mi familia, mis amigos y mis gatas, que son parte fundamental de mi día a día y siempre logran sacarme una sonrisa.
+</p>
+<p> Otra de mis grandes pasiones es viajar. Para mí, viajar es la mejor forma de aprender, porque te permite conocer otras culturas, entrar en contacto con personas diferentes y descubrir nuevas formas de ver la vida. Cada lugar me deja una experiencia distinta y me ayuda a crecer, tanto personal como profesionalmente. Definitivamente, no hay nada mejor que explorar el mundo y, sobre todo, hacerlo acompañada de quienes más quiero.
+</p>
+
+    <h3>¡Más fotooos!</h3>
+    <div class="coleccion">
+      <img src="foto4.png" alt="playita">
+      <img src="foto5.png" alt="gatas">
+      <img src="foto6.png" alt="hei">
+      <img src="foto7.png" alt="chicaas">
+      <img src="foto8.png" alt="fam">
+      <img src="foto9.png" alt="yo">
+    </div>
+
+    <div class="tarjeta">
+      <h2>¡Contáctame!</h2>
+      <ul>
+        <li>+51 952322082</li>
+        <li>milsantianie@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/maria-isabel-santiani-evangelista-85294334b/" target="_blank" rel="noreferrer">Maria Isabel Santiani Evangelista</a>.</li>
+      </ul>
+    </div>
+    
+    <p>¿Alguna recomendación? Déjala aquí.</p>
+    <form id = formulario>
+      <label for="cajadetexto">Mensaje</label>
+      <br>
+      <textarea id="cajadetexto" rows="4" cols="30"></textarea>
+      <br>
+      <button type = "button" id="boton">Enviar</button>
+    </form>
+    <p id="comunicado"></p>
+    <script>
+      const boton = document.getElementById("boton");
+      const formulario = document.getElementById("formulario")
+      const comunicado = document.getElementById("comunicado");
+
+      // Fila 20: addEventListener escucha el evento "click" sobre el boton.
+      boton.addEventListener("click", function () {
+        formulario.style.display = "none";
+        comunicado.textContent = "¡Gracias! Nos vemos pronto.";
+      });
+    </script>
+
+    <p> </p>
+
+  </body>
+</html>
